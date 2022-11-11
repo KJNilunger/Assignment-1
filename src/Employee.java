@@ -35,6 +35,9 @@ public class Employee {
 
     }
 
+    final double tax = 0.7;
+
+
     // calculate salary
     public int calculateSalary() {
         return (hours * hourlyRate);
@@ -42,7 +45,7 @@ public class Employee {
 
     // calculate net salary
     public double calculateNetSalary() {
-        return (calculateSalary() * 0.7);
+        return (calculateSalary() * tax);
     }
 }
 
